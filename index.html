@@ -1,44 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <title>Laurent Pellegrino</title>
-  <style type="text/css">
-    iframe {
-    background-color: transparent;
-    border: 0;
-    height: 600px;
-    width:550px;
-    }
-    
+    <meta charset="UTF-8">
+    <title>Laurent Pellegrino</title>
+    <link href="https://cdn-static-1.medium.com/_/fp/css/fonts-base.by5Oi_VbnwEIvhnWIsuUjA.css" rel="stylesheet">
+    <style type="text/css">
+.title-paper {
+    font-weight: bold;
+    font-size: 1.2em
+}
+
+.paper {
+    margin-bottom: 40px;
+}
+
+a{
+    color:#4d90fe;
+}
+a:hover{
+    color:#93b9f7;
+}
+
+body { font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+    font-size: 21px;}
+
     #global {
-    width: 510px;
-    height: 500px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -255px; /* moitié de width */
-    margin-top: -300px; /* moitié de height */    
+        width: 840px;
+        height: 500px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -420px; /* moitié de width */
+        margin-top: -400px; /* moitié de height */
     }
-  </style>
 
-  <body onload='parent.resizeIframe(document.body.scrollHeight)'>
-    <div id="global">
-      <iframe src="http://www.mendeley.com/profiles/laurent-pellegrino/widget/37/2831457904/6b9475760fadd4b0fa94fd2e6f0d0b4b7574a03d"></iframe>
-    </div>
-  
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-27952387-1']);
-      _gaq.push(['_trackPageview']);
+    .paper p {
+        margin:0;
+        padding:0 0 8px 0;
+    }
+    </style>
 
-      (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();    
-    </script>
-  </body>
-  
+    <body onload='parent.resizeIframe(document.body.scrollHeight)'>
+        <div id="global">
+            <h1>Publications</h1>
+            <div class="paper">
+                <p class="title-paper"><a href="https://hal.inria.fr/inria-00636408">Modular P2P-based approach for RDF
+                    data storage and retrieval</a></p>
+                <p class="authors-paper">Imen Filali, Laurent Pellegrino, Francesco Bongiovanni, Fabrice
+                Huet, Françoise Baude et al.</p>
+                <p class="proceedings-paper">In Advances in P2P systems. Best Paper
+                Award, 2011.</a>
+            </div>
+
+            <div class="paper">
+                <p class="title-paper"><a href="https://www.thinkmind.org/download.php?articleid=cloud_computing_2012_10_40_20283">Towards
+                    a scalable cloud-based RDF storage offering a pub/sub query service</a></p>
+                <p class="authors-paper">Laurent Pellegrino, Françoise Baude et Iyad Alshabani</p>
+                <p class="proceedings-paper">In Cloud computing 2012, the third international conference on cloud
+                computing, grids, and virtualization, 2012, pages 243–246.</a>
+            </div>
+
+            <div class="paper">
+                <p class="title-paper"><a href="http://link.springer.com/chapter/10.1007%2F978-3-662-46641-4_23">An approach for efficiently combining
+                    real-time and past events for ubiquitous business processing</a></p>
+                <p class="authors-paper">Laurent Pellegrino, Iyad Alshabani, Françoise Baude, RolandStuehmer et Nenad Stojanovic</p>
+                <p class="proceedings-paper">In
+                SBPM 2012, 7th international workshop on semantic business process
+                management, 2012.</a>
+            </div>
+
+            <div class="paper">
+                <p class="title-paper"><a href="https://hal.inria.fr/hal-00856737">A distributed publish/subscribe system for RDF data</a></p>
+                <p class="authors-paper">Laurent Pellegrino, Fabrice Huet, Françoise Baude et Amjad
+                Alshabani</p>
+                <p class="proceedings-paper">In,
+                Proceedings of the 6th international conference on data management in
+                cloud, grid and P2P systems (globe 2013). Springer, 2013.</a>
+            </div>
+
+
+
+            <div class="paper">
+                <p class="title-paper"><a href="https://hal.inria.fr/hal-00918637">Efficient data-intensive event-driven interaction in SOA</a></p>
+                <p class="authors-paper">Quirino Zagarese, Gerardo Canfora, Eugenio Zimeo, Iyad Alshabani, Laurent Pellegrino et Françoise Baude</p>
+                <p class="proceedings-paper">In Proceedings of the 28th annual acm symposium on applied computing. ACM, 2013, pages 1907–1912.</p>
+            </div>
+
+            <div class="paper">
+                <p class="title-paper"><a href="https://hal.inria.fr/hal-01094590">Improving data-intensive EDA performance with annotation-
+                    driven laziness</a></p>
+                <p class="authors-paper">Quirino Zagarese, Gerardo Canfora, Eugenio Zimeo, Iyad
+                Alshabani, Laurent Pellegrino, Amjad Alshabani et Françoise
+                Baude</p>
+                <p class="proceedings-paper">Science of computer programming, 2013.</p>
+            </div>
+
+            <div class="paper">
+                <p class="title-paper"><a href="https://hal.inria.fr/hal-01101688">A Generic API for Load Balancing in Structured P2P Systems</a></p>
+                <p class="authors-paper">Maeva Antoine, Laurent Pellegrino, Françoise
+                Baude, Fabrice Huet</p>
+                <p class="proceedings-paper">Workshop on Parallel and Distributed Computing for Big Data Applications, 2014.</p>
+            </div>
+        </div>
+
+        <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-59741838-2', 'auto');
+ga('send', 'pageview');
+
+        </script>
+    </body>
+
 </html>
-
-
